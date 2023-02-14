@@ -1,0 +1,102 @@
+$main-blue: #337ab7;
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Dosis', sans-serif;
+$brand-font: 'Pacifico';
+
+.navbar-default {
+    font-family: $secondary-font;
+    background-color: white;
+  }
+  
+  html, body {
+    font-family: $primary-font;
+  }
+
+  .navbar .navbar-brand {
+    font-family: $brand-font;
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: $main-blue;
+  }
+
+  $footer-height: 45px;
+/* Sticky footer styles
+-------------------------------------------------- */
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -$footer-height;
+  /* Pad bottom by footer height */
+  padding: 0 0 $footer-height;
+}
+
+.footer {
+  height: $footer-height;
+}
+  
+.description{
+font-weight: normal;
+letter-spacing: 1x;
+font-size: large;
+background-color:rgba(137, 184, 245, 0.1)
+}
+
+
+
+// https://stackoverflow.com/a/61994924
+.will_pagination {
+  background: white;
+  cursor: default;
+  /* self-clearing method: */ }
+  .will_pagination a, .will_pagination span, .will_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .will_pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+  .will_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: #2e6ab1;
+    color: white;
+    border: 1px solid #2e6ab1; }
+  .will_pagination a {
+    text-decoration: none;
+    color: #105cb6;
+    border: 1px solid #9aafe5; }
+    .will_pagination a:hover, .will_pagination a:focus {
+      color: #000033;
+      border-color: #000033; }
+  .will_pagination .page_info {
+    background: #2e6ab1;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center; }
+    .will_pagination .page_info b {
+      color: #000033;
+      background: #6aa6ed;
+      padding: 0.1em 0.25em; }
+  .will_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .will_pagination {
+    height: 1%; }
+  *:first-child + html .will_pagination {
+    overflow: hidden; 
+}
